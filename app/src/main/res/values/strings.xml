@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">LoanManagement</string>
+
+    <string-array name="tablet_brands">
+        <item>Samsung</item>
+        <item>Huawei</item>
+    </string-array>
+
+    <string-array name="cable_types">
+        <item>USB-C</item>
+        <item>Micro-USB</item>
+    </string-array>
+
+    <string-array name="filtering">
+        <item>All</item>
+        <item>Samsung</item>
+        <item>Huawei</item>
+        <item>USB-C</item>
+        <item>Micro-USB</item>
+        <item>Dato</item>
+    </string-array>
+</resources>

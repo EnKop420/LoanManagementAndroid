@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UserActivity"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/returnButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text="Tilbage"
+            android:textSize="15sp"
+            android:layout_margin="10dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:padding="50dp"
+        android:gravity="center">
+        <!-- Tablet Brand Spinner -->
+        <TextView
+            android:id="@+id/labelTabletBrand"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tablet Brand"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:layout_marginBottom="8dp"/>
+
+        <Spinner
+            android:id="@+id/spinnerTabletBrand"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Loaner Name EditText -->
+        <TextView
+            android:id="@+id/labelLoanerName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dit Navn"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:layout_marginBottom="8dp"/>
+
+        <EditText
+            android:id="@+id/editLoanerName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Navn"
+            android:textAlignment="center"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Loaned Date -->
+        <TextView
+            android:id="@+id/labelLoanedDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dato på lån"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:id="@+id/loanedDateTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Select Date"
+            android:background="@color/light_grey"
+            android:padding="16dp"
+            android:textAlignment="center"
+            android:clickable="true"
+            android:focusable="true"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Cable Type Spinner -->
+        <TextView
+            android:id="@+id/labelCableType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kabel Type"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:layout_marginBottom="8dp"/>
+
+        <Spinner
+            android:id="@+id/spinnerCableType"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="16dp"
+            />
+
+        <!-- Submit Button -->
+        <Button
+            android:id="@+id/submitButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Lån"
+            android:layout_marginBottom="16dp"/>
+    </LinearLayout>
+</LinearLayout>
